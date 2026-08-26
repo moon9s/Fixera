@@ -1,0 +1,57 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../app/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+model Customer {
+  id        String    @id @default(uuid())
+  fullName  String
+  phone     String    @unique
+  createdAt DateTime  @default(now())
+  requests  Request[]
+}
+
+model Request {
+  id                  String          @id
+  customerId          String
+  customer            Customer        @relation(fields: [customerId], references: [id], onDelete: Cascade)
+  deviceModel         String
+  problem             String?
+  status              String          @default("ثبت شده")
+  price               String?         @default("برآورد نشده")
+  priceApprovalStatus String?
+  createdAt           DateTime        @default(now())
+  quotes              Quote[]
+  notes               Note[]
+  timeline            TimelineEvent[]
+}
+
+model Quote {
+  id             String   @id @default(uuid())
+  requestId      String
+  request        Request  @relation(fields: [requestId], references: [id], onDelete: Cascade)
+  amount         String
+  approvalStatus String   @default("PENDING")
+  updatedAt      DateTime @updatedAt
+}
+
+model Note {
+  id        String   @id @default(uuid())
+  requestId String
+  request   Request  @relation(fields: [requestId], references: [id], onDelete: Cascade)
+  content   String
+  createdAt DateTime @default(now())
+}
+
+model TimelineEvent {
+  id          String   @id @default(uuid())
+  requestId   String
+  request     Request  @relation(fields: [requestId], references: [id], onDelete: Cascade)
+  title       String
+  description String?
+  date        String
+  createdAt   DateTime @default(now())
+}
