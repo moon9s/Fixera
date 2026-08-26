@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛠️ Fixera - Device Repair Service Management System
 
-## Getting Started
+[![Netlify Status](https://api.netlify.com/api/v1/badges/231981d1-da41-46ca-b887-dbd8cf34472f/deploy-status)](https://app.netlify.com/projects/fixera-final/deploys)
 
-First, run the development server:
+**Fixera** is a modern web application built for electronic and device repair shops to manage customer service requests, track device repair statuses, and handle administrative workflows efficiently.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🔗 **Live Demo:** [https://fixera-final.netlify.app](https://app.netlify.com/projects/fixera-final/deploys)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✨ Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* **Online Repair Request Submission:** Customers can easily submit their device details, contact info, and issue descriptions.
+* **Tracking System:** Unique tracking codes generated for each request so customers can check their repair progress in real-time.
+* **Admin Dashboard:** Manage incoming requests, update repair statuses, set prices, and view customer logs.
+* **Timeline Tracking:** Step-by-step history and timeline for every device lifecycle.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* **Framework:** [Next.js](https://nextjs.org/) (App Router)
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+* **Database & ORM:** Prisma with SQLite / PostgreSQL
+* **Deployment:** [Netlify](https://www.netlify.com/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## ⚙️ Getting Started Locally
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/your-username/fixera.git](https://github.com/your-username/fixera.git)
+   cd service-management
