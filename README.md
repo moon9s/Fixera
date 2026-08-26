@@ -1,10 +1,10 @@
 # 🛠️ Fixera - Device Repair Service Management System
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/231981d1-da41-46ca-b887-dbd8cf34472f/deploy-status)](https://app.netlify.com/projects/fixera-final/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/231981d1-da41-46ca-b887-dbd8cf34472f/deploy-status)](https://fixera-final.netlify.app)
 
 **Fixera** is a modern web application built for electronic and device repair shops to manage customer service requests, track device repair statuses, and handle administrative workflows efficiently.
 
-🔗 **Live Demo:** [https://fixera-final.netlify.app](https://app.netlify.com/projects/fixera-final/deploys)
+🔗 **Live Demo:** [https://fixera-final.netlify.app](https://fixera-final.netlify.app)
 
 ---
 
